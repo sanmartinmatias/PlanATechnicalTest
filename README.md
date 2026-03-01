@@ -27,3 +27,5 @@ Given more time I've would
   - Score in the game over popup
   - Animations for the gameover popup and blocks falling
   - Dynamic grid on the background, now you can change the grid size in the GameManager.cs but the view would not handle it.
+  - improved the falling logic, it may fail if poping a C shape group of blocks.
+    
