@@ -274,7 +274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &62357016
 RectTransform:
   m_ObjectHideFlags: 0
@@ -756,6 +756,7 @@ MonoBehaviour:
   _gameOverView: {fileID: 1532308134}
   _gameView: {fileID: 1262773020}
   _maxMoves: 5
+  gridSize: {x: 5, y: 6}
 --- !u!4 &366620704
 Transform:
   m_ObjectHideFlags: 0
