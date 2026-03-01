@@ -54,7 +54,6 @@ public class GameManager : MonoBehaviour
 
     IEnumerator HandleBlockClicked(int x, int y)
     {
-
         var visited = new List<BlockView>();
         var clickedBlocks = FindAdjacentBlocks(x,y,ref visited );
         if (clickedBlocks != null)
@@ -70,7 +69,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         HandleTurn();
     }
-        IEnumerator HandleBlocksFalling(List<BlockView> clickedBlocks)
+    IEnumerator HandleBlocksFalling(List<BlockView> clickedBlocks)
     {
         yield return new WaitForSeconds(0.1f); 
         for (int x = 0; x < (int)gridSize.x; x++)
@@ -96,7 +95,6 @@ public class GameManager : MonoBehaviour
                 _blocks[x, (int)gridSize.y - 1 - i].SetRandomSprite();
             }
         }
-
         yield return null;
     }
 
@@ -133,7 +131,6 @@ public class GameManager : MonoBehaviour
     void HandleTurn()
     {
         _moves--;
-        _score += 10;
         _gameView.UpdateMoves(_moves);
         _gameView.UpdateScore(_score);
         if (_moves <= 0) // lost the game, out of moves
