@@ -20,8 +20,10 @@ Added gameplay logic, Game over was already done from the "Make Move" Button. Up
 https://github.com/user-attachments/assets/14efdde5-438e-4a62-8cab-53da288a1ce7
 
 Final Notes:
+I've aproximately taken 1 hor for each iteration, making the last one a little challenge and i felt pressed on time but got it working within the 3 hrs limit, if you want you can check the commits time. I've started on February 28th at 18:30 amd finished the last commit at 21:30
+
 Given more time I've would
   - Added input locking to avoid multiclicks
   - Score in the game over popup
   - Animations for the gameover popup and blocks falling
-  - Dynamic grid on the background, now you can change the grid size in the '''GameManager.cs''' but the view would not handle it.
+  - Dynamic grid on the background, now you can change the grid size in the GameManager.cs but the view would not handle it.
